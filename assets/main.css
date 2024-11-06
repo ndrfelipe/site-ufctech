@@ -5,3 +5,9 @@
 .cor{
     color: white;
 }
+
+.corzinha {
+    background: linear-gradient(90deg, rgb(216, 27, 27) 0%, rgb(139, 12, 12) 35%, rgb(201, 72, 72) 100%);
+    color: white;
+}
+
