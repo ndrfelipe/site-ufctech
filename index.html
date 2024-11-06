@@ -12,30 +12,53 @@
     <main>
         <header>
             <nav class="barra-navegacao">
-                <ul class="menu">
-                    <li class="menu-item"><a href="">Projeto</a></li>
-                    <li class="menu-item"><a href="">Passo a Passo</a></li>
-                    <li class="menu-item"><a href="">Lições</a></li>
-                    <li class="menu-item"><a href="">Autores</a></li>
-                </ul>                
+                <div class="container">
+                    <header class="d-flex justify-content-center py-3 mt-3">
+                      <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Projeto</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Passo a Passo</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Lições</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Autores</a></li>
+                      </ul>
+                    </header>
+                  </div>                                
             </nav>
         </header>
 
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <div class="container col-xxl-8 px-4 py-2">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-2">
+              <div id="background-img" class="col-10 col-sm-8 col-lg-6">
+                <img src="img/PHOTO-2024-10-31-19-24-08.jpg" class="d-block mx-lg-auto img-fluid" alt="UFCTech Logo" width="700" height="500" loading="lazy">
               </div>
               <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-flex gap-2 justify-content-left py-2">
+                    <span class="badge bg-success-subtle text-success-emphasis rounded-pill py-2 px-2">Solução</span>
+                </div>
+                <h2 class="display-6 fw-bold text-body-emphasis lh-1 mb-3">UFCTech: uma sensação tecnológica</h2>
+                <p class="lead">A UFCTech é uma solução voltada para a diversão, que une tecnologia e inovação. Uma nova versão do jogo Passa-ou-Repassa. </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</button>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="px-4 pt-5 my-5 text-center border-bottom bg-dark">
+            <div class="d-flex gap-2 justify-content-center py-1">
+                <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill py-2 px-2">Protótipo</span>
+            </div>
+            <h1 class="display-5 fw-bold cor">Modelo teórico</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4 cor">Esse é o modelo teórico do nosso protótipo, realizado no software TinkerCad. </p>
+            </div>
+            <div class="overflow-hidden" style="max-height: 100vh;">
+              <div class="container px-5">
+                <img src="img/img-prototipo.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
