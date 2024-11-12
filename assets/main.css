@@ -7,7 +7,10 @@
 }
 
 .corzinha {
-    background: linear-gradient(90deg, rgb(216, 27, 27) 0%, rgb(139, 12, 12) 35%, rgb(201, 72, 72) 100%);
+    background: linear-gradient(90deg, rgb(211, 35, 141) 0%, rgb(213, 103, 103) 35%, rgb(217, 19, 19) 100%);
     color: white;
 }
 
+.corzinha button {
+    color: aliceblue;
+}
