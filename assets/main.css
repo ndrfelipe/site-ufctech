@@ -1,5 +1,8 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .cor{
@@ -19,4 +22,31 @@
     border-radius: 20px;
     box-shadow: 0px 5px 5px 0px #e1e1e1;
 
+}
+
+.conteudo{
+    height: 90dvh;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title-palavra-chave{
+    margin-bottom: 2rem;
+}
+
+.palavra-chave{
+    background-color: rgb(240, 38, 38);
+    padding: 0.5rem;
+    color: white;
+    margin: 20px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.palavra-chave:hover{
+    cursor: default;
 }
