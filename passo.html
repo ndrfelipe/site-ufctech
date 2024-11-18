@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2491846397.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="barra-navegacao" >
+        <div class="container" >
+            <header class="d-flex justify-content-center py-2 mt-3">
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link" style="color: #050505;"  aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="projeto.html" class="nav-link" style="color: #050505;">Projeto</a></li>
+                <li class="nav-item"><a href="passo.html"  class="nav-link active bg-danger" aria-current="page">Passo a Passo</a></li>
+                <li class="nav-item"><a href="licoes.html" class="nav-link" style="color: #050505;">Lições</a></li>
+                <li class="nav-item"><a href="autores.html" class="nav-link" style="color: #050505;">Autores</a></li>
+              </ul>
+            </header>
+          </div> 
+          <hr>                           
+    </nav>
+  </header>
+
+  <section class=" py-4 d-flex justify-content-center ">
+    <div class="container p-5" id="passo-a-passo" >
+        <div class="row">
+            <div class="col-4">
+              <div id="list-example" class="list-group position-fixed" style="width: 200px;">
+                <a class="list-group-item list-group-item-action " href="#list-item-1">Passo 1</a>
+                <a class="list-group-item list-group-item-action " href="#list-item-2">Passo 2</a>
+                <a class="list-group-item list-group-item-action " href="#list-item-3">Passo 3</a>
+                <a class="list-group-item list-group-item-action " href="#list-item-4">Passo 4</a>
+                <a class="list-group-item list-group-item-action " href="#list-item-5">Passo 5</a>
+                <a class="list-group-item list-group-item-action " href="#list-item-6">Passo 6</a>
+                <a class="list-group-item list-group-item-action " href="#list-item-7">Passo 7</a>
+                <a class="list-group-item list-group-item-action " href="#list-item-8">Passo 8</a>
+              </div>
+            </div>
+            <div class="col-8 bg-dark text-bg-dark p-4 border rounded-3">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                
+                <h3 class="title">Guia para Montagem do Projeto</h3>
+                <p class="subtitle">
+                  Esse projeto envolve o uso de LEDs, botões, resistores, um buzzer e uma protoboard, com
+o objetivo de criar um sistema onde apenas um botão pode ser ativado por vez, sob controle
+de um mediador. Durante a ativação, um contador de 13 segundos é iniciado, e um aviso
+sonoro é emitido para indicar o término do tempo.
+                </p>
+                
+                <h4>
+                  Objetivo do Projeto
+                </h4>
+                <p>Criar um sistema interativo com Arduino onde:</p>
+                <ul>
+                  <li>Cada pessoa possui um botão associado.</li>
+                  <li>Apenas um botão pode ser pressionado por vez.</li>
+                  <li>O mediador controla quando outro participante pode pressionar seu botão.</li>
+                  <li>Um buzzer emite sons intermitentes durante 13 segundos para indicar o tempo disponível.</li>
+                  <li>No final do tempo, o buzzer emite um som longo para avisar que o tempo de resposta se encerrou.</li>
+                </ul>
+                
+                <h4>
+                  Materiais necessários
+                </h4>
+                <ul>
+                  <li>1 Arduino Uno (ou similar).</li>
+                  <li>1 Protoboard.</li>
+                  <li>Botões push-button (1 por jogador, 1 para o mediador).</li>
+                  <li>LEDs (1 para cada jogador).</li>
+                  <li>1 Buzzer piezoelétrico.</li>
+                  <li>Resistores de 220Ω.</li>
+                  <li>Jumpers (fios de conexão).</li>
+                  <li>Cabo USB (para conectar o Arduino ao computador).</li>
+                </ul>
+                
+
+
+                <h4 id="list-item-1" class="passo-estilo">Passo 1</h4>
+                <p>Testar o Circuito no Tinkercad Antes de montar fisicamente, recomendamos usar o Tinkercad para simular o funcionamento do circuito:</p>
+                <ol style="margin: 0 0 100px 0">
+                  <li>
+                    Acesse o TinkerCad
+                  </li>
+                  
+                  <li>
+                    Crie um novo projeto e adicione os componentes mencionados.
+                  </li>
+                  <li>
+                    Configure o circuito para:
+                    <ul>
+                      <li>
+                        Cada botão acender um LED específico.
+                      </li>
+                      <li>
+                        Impedir a ativação simultânea de LEDs.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    Faça ajustes no código do Arduino no ambiente de simulação
+                  </li>
+                  
+                </ol>
+
+                <h4 id="list-item-2" class="passo-estilo">Passo 2</h4>
+                <p>Conectar o Arduino na Protoboard</p>
+                <ul>
+                  <li>Faça as conexões básicas de alimentação:
+                    <ul>
+                      <li>5V do Arduino para a linha positiva da protoboard.</li>
+                      <li>GND do Arduino para a linha negativa.</li>
+                    </ul>
+                  </li>
+                  <li>Imagem: Montagem inicial (protoboard e Arduino).</li>
+                </ul>
+
+                <img src="img/img-passo-1.jpeg" alt="Conexão arduíno na protoboard" class="img-fluid" style="margin: 0 0 100px 0; border-radius: 20px;">
+
+                <h4 id="list-item-3" class="passo-estilo">Passo 3</h4>
+                <p>Conectar os LEDs</p>
+                <ul>
+                  <li>Insira os LEDs na protoboard (um por jogador).</li>
+                  <li>Conecte o ânodo de cada LED a um resistor de 220Ω, ligado a um pino digital do Arduino (ex.: pinos 2, 3, 4…).</li>
+                  <li>Conecte o cátodo de cada LED à linha negativa (GND).</li>
+                </ul>
+
+                <img src="img/img-passo-3.jpeg" alt="Conexão arduíno na protoboard" class="img-fluid" style="margin: 0 0 100px 0; border-radius: 20px;">
+                
+                <h4 id="list-item-4" class="passo-estilo">Passo 4</h4>
+                <p>Conectar os Botões</p>
+                <ul>
+                  <li>Conecte cada botão à protoboard.</li>
+                  <li>Ligue um lado do botão a um pino digital do Arduino (ex.: pinos 5, 6, 7…).</li>
+                  <li>Conecte o outro lado à linha positiva (+5V).</li>
+                  <li>Adicione um resistor de 220kΩ entre o pino do botão e o GND.</li>
+                </ul>
+                <img src="img/img-passo-4.jpeg" alt="Conexão arduíno na protoboard" class="img-fluid" style="margin: 0 0 100px 0; border-radius: 20px;">
+                
+                <h4 id="list-item-5" class="passo-estilo">Passo 5</h4>
+                <p>Ajustes Finais</p>
+                <ul style="margin: 0 0 100px 0;">
+                  <li>Organize os fios e componentes na protoboard para evitar curto-circuitos.</li>
+                  <li>(Opcional) Monte o circuito em uma placa PCB para uma versão mais permanente.</li>
+                </ul>
+               
+                
+                <h4 id="list-item-6" class="passo-estilo">Passo 6</h4>
+                <p>Conectar o Buzzer</p>
+                <ul>
+                  <li>Escolha o pino do Arduino:
+                    <ul>
+                      <li>Utilize o pino 9 como saída digital para o buzzer.</li>
+                    </ul>
+                  </li>
+                  <li>Conexões do Buzzer:
+                    <ul>
+                      <li>Conecte o terminal positivo do buzzer ao pino 9 do Arduino.</li>
+                      <li>Conecte o terminal negativo ao GND do Arduino.</li>
+                      <li>Se o buzzer for passivo, adicione um resistor de 220Ω em série.</li>
+                    </ul>
+                  </li>
+                </ul>
+                
+                <img src="img/img-passo-7.jpeg" alt="Conexão arduíno na protoboard" class="img-fluid" style="margin: 0 0 100px 0; border-radius: 20px;">
+                
+                <h4 id="list-item-7" class="passo-estilo">Passo 7</h4>
+                <p>Código em C++ :</p>
+                
+                <img src="img/codigo1.jpeg" alt="Código 1" class="img-fluid" style="margin: 0 0 10px 0; border-radius: 20px;">
+                
+                <img src="img/codigo2.jpeg" alt="Código 2" class="img-fluid" style=" margin-bottom: 20px; border-radius: 20px;">
+                
+                <a href="" class="btn btn-md btn-danger">Acesse o repositório no github</a>
+
+                <h4 id="list-item-8" class="passo-estilo">Passo 8</h4>
+                <p>Testar o Circuito</p>
+                <ul style="margin: 0 0 50px 0;">
+                  <li>Faça o upload do código para o Arduino.</li>
+                  <li>Pressione um botão para iniciar a contagem de 13 segundos.</li>
+                  <li>Observe os bipes do buzzer a cada segundo e o som longo no final do tempo.</li>
+                  <li>Teste o botão do mediador para resetar o sistema antes do fim da contagem.</li>
+                </ul>
+                
+                <h3 class="title">Resultados Esperados</h3>
+                <ul>
+                  <li>Um LED acende e o buzzer emite bipes curtos intermitentes a cada segundo enquanto o tempo passa.</li>
+                  <li>Após 13 segundos:
+                    <ul>
+                      <li>O buzzer emite um som longo para indicar que o tempo acabou.</li>
+                    </ul>
+                  </li>
+                  <li>O sistema permite reset manual pelo mediador a qualquer momento.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
