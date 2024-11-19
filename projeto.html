@@ -136,22 +136,446 @@
       
   </section>
 
-  <section id="componentes" class="px-4 pb-2 pt-5 text-center bg-dark">
+  <section id="componentes" class="px-4 pb-2 pt-5 text-center text-bg-dark bg-dark">
     <div class="container">
-
-      <div class="d-flex gap-2 justify-content-center py-1">
-          <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill py-2 px-2">Protótipo</span>
-      </div>
       
-      <div class="d-flex position-relative text-bg-dark">
-        <img src="..." class="flex-shrink-0 me-3" alt="...">
-        <div>
-          <h5 class="mt-0">Custom component with stretched link</h5>
-          <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-          <a href="#" class="stretched-link">Go somewhere</a>
-        </div>
-      </div>
+      <h3 class="title ">Componentes e Suprimentos</h3>
+     
+      <div class="accordion accordion-flush" id="accordionFlushExample">
 
+        <!-- Arduíno uno -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Arduíno Uno
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+
+              <div class="card shadow-sm">
+                <div class="card-header text-center ">
+                    <img src="img/arduino-uno.jpg" alt="" class="img-fluid" style="max-width: 480px;">
+                </div>
+                <div class="card-body">
+                    <p class="text-muted">
+                        O <strong>Arduino Uno</strong> é uma das placas mais populares da plataforma Arduino, sendo ideal para prototipagem em eletrônica. Ele é baseado no microcontrolador <strong>ATmega328P</strong> e oferece um equilíbrio entre simplicidade e versatilidade.
+                    </p>
+                    <h3 class="mt-4">Especificações Técnicas</h3>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item"><strong>Tensão de operação:</strong> 5V</li>
+                        <li class="list-group-item"><strong>Pinos digitais:</strong> 14 (6 com saída PWM)</li>
+                        <li class="list-group-item"><strong>Entradas analógicas:</strong> 6 (resolução de 10 bits)</li>
+                        <li class="list-group-item"><strong>Memória:</strong> 32 KB Flash, 2 KB SRAM, 1 KB EEPROM</li>
+                        <li class="list-group-item"><strong>Clock:</strong> 16 MHz</li>
+                    </ul>
+                    <h3 class="mt-4">Principais Componentes</h3>
+                    <p>
+                        O Arduino Uno inclui uma interface USB para programação, regulador de tensão, LED indicador, botão de reset e conectores para pinos digitais e analógicos. Ele também suporta protocolos de comunicação como <strong>UART</strong>, <strong>SPI</strong> e <strong>I2C</strong>.
+                    </p>
+                    <h3 class="mt-4">Aplicações</h3>
+                    <p>
+                        É amplamente utilizado para controle de LEDs, sensores, motores, automação de processos e prototipagem de projetos de Internet das Coisas (IoT).
+                    </p>
+                    <div class="alert alert-info mt-4" role="alert">
+                        <strong>Nota:</strong> É uma excelente escolha para iniciantes devido à sua comunidade ativa e vasto suporte de bibliotecas.
+                    </div>
+                </div>
+                <div class="card-footer text-center text-muted">
+                    © 2024 - Resumo Arduino Uno
+                </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      <!-- Fim arduíno UNO -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Protoboard
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> 
+
+              <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Protoboard</h1>
+                    <p class="lead text-muted">Uma ferramenta essencial para prototipagem de circuitos eletrônicos.</p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <img src="img/protoboard.avif" class="img-fluid rounded shadow" alt="Protoboard">
+                </div>
+                <div class="col-md-6" style="text-align: left;">
+                    <h2>O que é um Protoboard?</h2>
+                    <p>
+                      Um protoboard é uma base de montagem reutilizável para criar protótipos de circuitos eletrônicos sem soldagem, composta por uma matriz de furos conectados internamente para facilitar a inserção de componentes e fios.   
+                    </p>
+                    <p>
+                        Essa ferramenta é amplamente utilizada por estudantes, engenheiros e hobbystas para testar circuitos antes de uma implementação definitiva em uma placa de circuito impresso (PCB).
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <h2>Funcionalidades</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Montagem de circuitos sem solda.</li>
+                        <li class="list-group-item">Possibilidade de reutilização para múltiplos projetos.</li>
+                        <li class="list-group-item">Compatibilidade com resistores, LEDs, capacitores e outros componentes.</li>
+                        <li class="list-group-item">Divisões práticas para alimentação e sinal.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Estrutura</h2>
+                    <p>
+                        O protoboard é dividido em três seções principais:
+                    </p>
+                    <ol class="list-group">
+                        <li class="list-group-item">Linhas de alimentação: localizadas nas extremidades para conexões de energia (VCC e GND).</li>
+                        <li class="list-group-item">Área central: destinada à montagem de componentes e conexões.</li>
+                        <li class="list-group-item">Trilhos verticais: facilitam a interligação de circuitos.</li>
+                    </ol>
+                </div>
+            </div>
+    
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2>Por que utilizar um Protoboard?</h2>
+                    <p class="fs-5">
+                        O protoboard é uma ferramenta indispensável para a prototipagem de circuitos, permitindo testar ideias e ajustar projetos antes de uma implementação permanente.
+                        É econômico, prático e fácil de usar, ideal para iniciantes e profissionais.
+                    </p>
+                   
+                </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Jumpers (12)
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Jumpers</h1>
+                    <p class="lead text-muted">Conexões simples e eficientes para montagem de circuitos eletrônicos.</p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <img src="img/m-m10-jhpvzruxrr.webp" class="img-fluid rounded shadow" alt="Jumpers">
+                </div>
+                <div class="col-md-6" style="text-align: left;">
+                    <h2>O que são Jumpers?</h2>
+                    <p>
+                        Jumpers são fios condutores utilizados para conectar diferentes pontos de um circuito eletrônico, sendo amplamente usados em protoboards e placas de circuito impresso (PCBs).
+                        Eles possibilitam a criação de conexões temporárias ou permanentes, garantindo flexibilidade e organização no desenvolvimento de protótipos.
+                    </p>
+                    <p>
+                        Disponíveis em diferentes comprimentos e tipos, os jumpers são indispensáveis para estudantes e profissionais da eletrônica ao facilitar testes e ajustes em projetos.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <h2>Tipos de Jumpers</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Jumpers Macho-Macho:</strong> Conexão entre pinos ou terminais de protoboards.</li>
+                        <li class="list-group-item"><strong>Jumpers Macho-Fêmea:</strong> Conexão entre protoboards e módulos externos.</li>
+                        <li class="list-group-item"><strong>Jumpers Fêmea-Fêmea:</strong> Usados para conectar pinos de módulos ou dispositivos.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Vantagens dos Jumpers</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Facilidade de uso em prototipagem.</li>
+                        <li class="list-group-item">Reutilizáveis em diversos projetos.</li>
+                        <li class="list-group-item">Disponíveis em várias cores para facilitar a identificação.</li>
+                        <li class="list-group-item">Econômicos e amplamente disponíveis.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2>Por que usar Jumpers?</h2>
+                    <p class="fs-5">
+                        Jumpers são ferramentas simples, porém essenciais, para garantir a funcionalidade e a organização de circuitos, tornando-os ideais para aprendizado, prototipagem e ajustes rápidos.
+                    </p>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Botões (3)
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Botões Eletrônicos</h1>
+                    <p class="lead text-muted">Dispositivos simples para interação e controle em circuitos eletrônicos.</p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <img src="img/Push-Button-Arduino-e1586870732801.jpg.webp" class="img-fluid rounded shadow" alt="Botões Eletrônicos">
+                </div>
+                <div class="col-md-6" style="text-align: left;">
+                    <h2>O que são Botões Eletrônicos?</h2>
+                    <p>
+                        Botões eletrônicos, ou push-buttons, são dispositivos de entrada utilizados para enviar sinais elétricos em um circuito. Ao pressionar o botão, ocorre a conexão temporária entre os terminais, completando o circuito.
+                    </p>
+                    <p>
+                        Eles são amplamente empregados em dispositivos eletrônicos para iniciar ações, controlar equipamentos ou como elementos de interação em projetos com microcontroladores.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <h2>Tipos de Botões</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Momentâneo:</strong> Mantém o circuito fechado enquanto pressionado, retornando ao estado original ao ser solto.</li>
+                        <li class="list-group-item"><strong>Travamento (Toggle):</strong> Permanece em um estado (ligado ou desligado) até ser pressionado novamente.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Características dos Botões</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Disponíveis em diferentes tamanhos e formas.</li>
+                        <li class="list-group-item">Compatíveis com protoboards e PCBs.</li>
+                        <li class="list-group-item">Facilidade de uso em projetos eletrônicos e de automação.</li>
+                        <li class="list-group-item">Durabilidade para múltiplas utilizações.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2>Aplicações de Botões Eletrônicos</h2>
+                    <p class="fs-5">
+                        Botões são essenciais em controles remotos, painéis de comando, dispositivos embarcados, jogos eletrônicos e sistemas de automação, graças à sua simplicidade e eficiência.
+                    </p>
+                    
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              Buzzer (1)
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Buzzer</h1>
+                    <p class="lead text-muted">Um componente essencial para a geração de sons em circuitos eletrônicos.</p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <img src="img/buzzer.webp" class="img-fluid rounded shadow" alt="Buzzer">
+                </div>
+                <div class="col-md-6" style="text-align: left;">
+                    <h2>O que é um Buzzer?</h2>
+                    <p>
+                        O buzzer é um dispositivo eletromecânico ou eletrônico usado para gerar sons audíveis em circuitos eletrônicos.
+                        Ele é amplamente utilizado em aplicações como alarmes, notificações sonoras e sistemas de indicação.
+                    </p>
+                    <p>
+                        Existem dois principais tipos de buzzers: o piezoelétrico, que utiliza vibrações geradas por corrente elétrica, e o magnético, que opera através de eletromagnetismo.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <h2>Tipos de Buzzer</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Buzzer Ativo:</strong> Gera som automaticamente ao receber energia.</li>
+                        <li class="list-group-item"><strong>Buzzer Passivo:</strong> Requer um sinal de entrada para produzir som, permitindo controle mais avançado.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Características do Buzzer</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Tamanho compacto e fácil integração em circuitos.</li>
+                        <li class="list-group-item">Consumo energético baixo.</li>
+                        <li class="list-group-item">Compatível com microcontroladores como Arduino e Raspberry Pi.</li>
+                        <li class="list-group-item">Disponível em diversos tons e volumes.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2>Aplicações do Buzzer</h2>
+                    <p class="fs-5">
+                        Buzzers são usados em sistemas de alerta, dispositivos de segurança, equipamentos médicos, eletrodomésticos e até brinquedos, devido à sua versatilidade e eficiência.
+                    </p>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              Resistores (5)
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Resistores</h1>
+                    <p class="lead text-muted">Componentes essenciais para controlar a corrente elétrica em circuitos eletrônicos.</p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <img src="img/guia-componentes-eletronicos-parte-3.webp" class="img-fluid rounded shadow" alt="Resistor">
+                </div>
+                <div class="col-md-6" style="text-align: left;">
+                    <h2>O que são Resistores?</h2>
+                    <p>
+                        Resistores são componentes eletrônicos passivos projetados para limitar a quantidade de corrente elétrica em um circuito. Eles funcionam transformando parte da energia elétrica em calor, conforme a lei de Ohm.
+                    </p>
+                    <p>
+                        Cada resistor possui um valor de resistência específico, medido em ohms (Ω), que determina a quantidade de oposição à passagem da corrente elétrica.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <h2>Tipos de Resistores</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Fixos:</strong> Possuem um valor de resistência constante.</li>
+                        <li class="list-group-item"><strong>Variáveis:</strong> Permitem ajustar o valor de resistência, como potenciômetros e trimpots.</li>
+                        <li class="list-group-item"><strong>Termistores:</strong> Alteram sua resistência conforme a temperatura (NTC ou PTC).</li>
+                        <li class="list-group-item"><strong>LDR (Resistor Dependente de Luz):</strong> Mudam a resistência com a intensidade da luz.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Características dos Resistores</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Disponíveis em diferentes valores de resistência.</li>
+                        <li class="list-group-item">Identificados por código de cores ou marcações numéricas.</li>
+                        <li class="list-group-item">Tolerância que define a precisão do valor de resistência.</li>
+                        <li class="list-group-item">Classificação por potência, indicando a energia que podem dissipar.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2>Aplicações de Resistores</h2>
+                    <p class="fs-5">
+                        Resistores são utilizados para dividir tensões, limitar correntes, proteger componentes sensíveis e ajustar sinais em praticamente todos os tipos de circuitos eletrônicos.
+                    </p>
+                    
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+              Leds (2)
+            </button>
+          </h2>
+          <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">LEDs</h1>
+                    <p class="lead text-muted">Dispositivos versáteis e eficientes para iluminação e sinalização em eletrônica.</p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <img src="img/download.png" class="img-fluid rounded shadow" alt="LED">
+                </div>
+                <div class="col-md-6" style="text-align: left;">
+                    <h2>O que são LEDs?</h2>
+                    <p>
+                        LEDs (Diodos Emissores de Luz) são componentes eletrônicos que emitem luz quando uma corrente elétrica passa por eles. Eles são conhecidos por sua eficiência energética, durabilidade e tamanho compacto.
+                    </p>
+                    <p>
+                        A luz emitida por um LED é resultado de um processo chamado eletroluminescência, onde elétrons liberam energia na forma de fótons ao cruzarem a junção semicondutora.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <h2>Tipos de LEDs</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>LEDs Monocromáticos:</strong> Emitam uma única cor (ex: vermelho, azul, verde).</li>
+                        <li class="list-group-item"><strong>LEDs RGB:</strong> Combinam vermelho, verde e azul para gerar diversas cores.</li>
+                        <li class="list-group-item"><strong>LEDs de Alta Potência:</strong> Utilizados para iluminação devido ao brilho intenso.</li>
+                        <li class="list-group-item"><strong>LEDs Infravermelhos:</strong> Usados em controles remotos e sensores.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Características dos LEDs</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Baixo consumo de energia.</li>
+                        <li class="list-group-item">Vida útil longa em comparação a lâmpadas convencionais.</li>
+                        <li class="list-group-item">Disponíveis em uma ampla gama de cores e intensidades.</li>
+                        <li class="list-group-item">Polaridade definida (requere conexão correta de anodo e catodo).</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2>Aplicações de LEDs</h2>
+                    <p class="fs-5">
+                        LEDs são amplamente utilizados em eletrônica para indicação de status, iluminação residencial, displays de dispositivos, semáforos, automóveis e até tecnologia médica.
+                    </p>
+            </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
