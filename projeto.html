@@ -20,6 +20,7 @@
                 <li class="nav-item"><a href="passo.html" class="nav-link" style="color: #050505;">Passo a Passo</a></li>
                 <li class="nav-item"><a href="licoes.html" class="nav-link" style="color: #050505;">Lições</a></li>
                 <li class="nav-item"><a href="autores.html" class="nav-link" style="color: #050505;">Autores</a></li>
+                <li class="nav-item"><a href="projeto/PassaOuRepassa-Arduino-main.zip" download class="btn btn-outline-dark">Arquivo ZIP</a></li>
               </ul>
             </header>
           </div> 
@@ -31,37 +32,37 @@
     <div class="container p-5" id="motivacao" >
       <div class="row">
         <div class="col">
-          <div class="card p-3 text-bg-dark">
+          <div class="card p-3 pb-4 text-bg-dark">
             <div class="card-header">
               <h5 class="card-title"><i class="fa-solid fa-crosshairs"></i> Objetivo</h5>
             </div>
             <div class="card-body">
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa reiciendis consequuntur quae praesentium illo perspiciatis, excepturi autem. Ipsa omnis corrupti odit dignissimos voluptatibus officiis a nobis voluptate aspernatur tenetur.
+                Desenvolver um jogo interativo Passa ou Repassa utilizando Arduino, com a temática "UFCTECH", promovendo o aprendizado tecnológico de forma lúdica.
               </p>
             </div>  
           </div>
         </div>
         <div class="col">
-          <div class="card p-3  text-bg-danger">
+          <div class="card p-3 pb-4 text-bg-danger">
             <div class="card-header">
               <h5 class="card-title"><i class="fa-solid fa-sun"></i> Motivação</h5>
             </div>
             <div class="card-body">
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa reiciendis consequuntur quae praesentium illo perspiciatis, excepturi autem. Ipsa omnis corrupti odit dignissimos voluptatibus officiis a nobis voluptate aspernatur tenetur.
+                Incentivar o interesse por tecnologia e programação entre estudantes e entusiastas, unindo entretenimento e educação em um formato dinâmico e divertido.
               </p>
             </div>  
           </div>
         </div>
         <div class="col">
-          <div class="card p-3 text-bg-dark">
+          <div class="card p-3 pb-0 text-bg-dark">
             <div class="card-header">
               <h5 class="card-title"><i class="fa-solid fa-marker"></i> Contexto</h5>
             </div>
             <div class="card-body">
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa reiciendis consequuntur quae praesentium illo perspiciatis, excepturi autem. Ipsa omnis corrupti odit dignissimos voluptatibus officiis a nobis voluptate aspernatur tenetur.
+                O projeto foi idealizado no ambiente acadêmico, integrando habilidades práticas de programação, design de sistemas, e prototipação para criar uma solução que combina gamificação e tecnologia.
               </p>
             </div>  
           </div>
@@ -136,10 +137,10 @@
       
   </section>
 
-  <section id="componentes" class="px-4 pb-2 pt-5 text-center text-bg-dark bg-dark">
+  <section id="componentes" class="px-4 pb-4 pt-5 text-center text-bg-dark bg-dark">
     <div class="container">
       
-      <h3 class="title ">Componentes e Suprimentos</h3>
+      <h3 class="title pb-2">Componentes e Suprimentos</h3>
      
       <div class="accordion accordion-flush" id="accordionFlushExample">
 
@@ -578,6 +579,159 @@
       </div>
     </div>
   </section>
+
+
+  <section id="video">
+    <div class="container">
+      <div class="conteudo">
+        <h3 class="title">Conheça mais sobre nosso projeto</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ni4sMoIYGWo?si=uMWqQZzdTFGbZh6Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div> 
+  </section>
+
+  <section id="codigos" class="bg-dark text-bg-dark">
+    <h2 class="title text-center mb-5 p-4 text-bg-dark">Código</h2>
+    <div class="container ">
+      <div class="conteudo">
+        <div class=" my-5">
+         
+          <div class="row">
+            
+            <!-- Snippets de Código -->
+            <div class="col-md-6 mb-4 rounded-3 shadow-lg p-3" style="text-align: left;">
+              <h3>Trechos de Código (Snippets)</h3>
+              <p>Abaixo estão os trechos essenciais do código:</p>
+              <pre>
+      <code>  
+<span style="color: lightslategrey;">// Configuração dos pinos no setup</span>
+<span style="color: lightgreen;">void</span> setup() {
+ <span style="color: lightblue;">pinMode</span>(b1, INPUT);
+ <span style="color: lightblue;">pinMode</span>(b2, INPUT);
+ <span style="color: lightblue;">pinMode</span>(b3, INPUT);
+ <span style="color: lightblue;">pinMode</span>(led1, OUTPUT);
+ <span style="color: lightblue;">pinMode</span>(led2, OUTPUT);
+ <span style="color: lightblue;">pinMode</span>(buzzer, OUTPUT);
+}
+        
+<span style="color: lightslategrey;">// Controle de travas e ativação do buzzer</span>
+        
+<span style="color: lightgreen;">if</span> (trava == 1 && (millis() - tempoAtivacao >= 13000) && !buzzerAtivo) {
+ <span style="color: lightblue;">digitalWrite</span>(buzzer, HIGH);
+ buzzerAtivo = <span style="color: lightgreen;">true</span>;
+}
+      </code>
+    </pre>
+            </div>
+            <!-- Explicações Importantes -->
+            <div class="col-md-6 p-5" style="text-align: left;">
+              <h3>Explicações Importantes</h3>
+              <p>Abaixo estão as partes mais importantes explicadas:</p>
+              <ul>
+                <li><strong>Setup:</strong> Configura os pinos para entrada (botões) e saída (LEDs e buzzer).</li>
+                <li><strong>Ativação do buzzer:</strong> Após 13 segundos, ativa o buzzer por 3 segundos.</li>
+                <li><strong>Reset:</strong> Reseta o sistema ao pressionar o botão 3, desligando LEDs e o buzzer.</li>
+              </ul>
+
+              <div class="text-left mt-4">
+                <h3>Link para o Repositório</h3>
+                <p>
+                  Para acessar o código completo, visite o repositório no GitHub:
+                </p>
+                <a 
+                    href="https://github.com/ndrfelipe/PassaOuRepassa-Arduino" 
+                    class="btn btn-danger" 
+                    target="_blank"
+                  >
+                    Ver no GitHub
+                  </a>
+              </div>
+            </div>
+
+           
+          </div>
+          <!-- Link para o GitHub -->
+          <div class="row">
+            
+          </div>
+        </div>
+      </div>
+
+    </div> 
+  </section>
+
+
+  <section id="motivacao-objetivo-context py-4 d-flex justify-content-center " style="height: 90vh;">
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Ferramentas Utilizadas no Projeto</h1>
+      <div class="row">
+        <!-- Item 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Arduino IDE</h5>
+              <p class="card-text">Utilizado para programação do Arduino.</p>
+              <p><strong>Versão:</strong> 2.1.1</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Linguagem C++</h5>
+              <p class="card-text">Desenvolvimento da lógica de controle no Arduino.</p>
+              <p><strong>Versão:</strong> C++11</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Visual Studio Code</h5>
+              <p class="card-text">Desenvolvimento Web com HTML, CSS e Bootstrap.</p>
+              <p><strong>Versão:</strong> 1.83.1</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">Estilização responsiva e design front-end.</p>
+              <p><strong>Versão:</strong> 5.3.2</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Lean Canvas</h5>
+              <p class="card-text">Idealização e planejamento estratégico do projeto.</p>
+              <p><strong>Versão:</strong> Não aplicável</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Figma</h5>
+              <p class="card-text">Prototipação visual do projeto.</p>
+              <p><strong>Versão:</strong> Versão web ou Desktop App</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
