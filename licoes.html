@@ -4,99 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto</title>
-    <link rel="stylesheet" href="assets/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/2491846397.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .bord {
+            border: 1px solid #ccc; /* Cor e espessura da borda */
+            border-radius: 8px; /* Cantos arredondados */
+            padding: 15px; /* Espaçamento interno */
+            background-color: #f9f9f9; /* Cor de fundo leve */
+        }
+
+        h1 {
+            font-size: 1.5rem; /* Tamanho do título ajustado */
+        }
+
+        p {
+            font-size: 1.1rem; /* Tamanho do parágrafo reduzido */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
   <header>
-    <nav class="barra-navegacao" >
-        <div class="container" >
+    <nav class="barra-navegacao">
+        <div class="container">
             <header class="d-flex justify-content-center py-2 mt-3">
               <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.html" class="nav-link" style="color: #050505;"  aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link" style="color: #050505;" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="projeto.html" class="nav-link" style="color: #050505;">Projeto</a></li>
-                <li class="nav-item"><a href="passo.html"  class="nav-link" style="color: #050505;">Passo a Passo</a></li>
+                <li class="nav-item"><a href="passo.html" class="nav-link" style="color: #050505;">Passo a Passo</a></li>
                 <li class="nav-item"><a href="licoes.html" class="nav-link active bg-danger" aria-current="page">Lições</a></li>
                 <li class="nav-item"><a href="autores.html" class="nav-link" style="color: #050505;">Autores</a></li>
               </ul>
             </header>
-          </div> 
-          <hr>                           
+        </div> 
+        <hr>                           
     </nav>
   </header>
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban" viewBox="0 0 16 16">
-    <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
-  </svg>
- 
 
+  <main>
+      <h1 style="justify-content: center; display: flex; font-size: 50px; margin-top: 100px;" >Manuele Macedo<i class="bi bi-hourglass-split" style="margin-left: 20px;"></i></h1>
+    <div class="container py-4" style="display: flex; gap: 1rem; align-items: stretch; margin-bottom: 50px;">
 
-  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-            id="bd-theme"
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="dropdown"
-            aria-label="Toggle theme (auto)">
-      <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-    </button>
-    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-          Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-          Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-          Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-        </button>
-      </li>
-    </ul>
-  </div>
-
-  
-
-
-  <div class="container px-4 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">Columns with icons</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-       
+      <!-- Primeiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">O que deu errado?</h1>
+          <p>No início, o maior desafio foi conseguir encontrar tempo suficiente para dedicar ao projeto, especialmente por conta de problemas pessoais. A falta de uma gestão mais eficiente do meu tempo fez com que o projeto não avançasse na velocidade desejada e em algumas ocasiões.</p>
         </div>
-        <h3 class="fs-2 text-body-emphasis">O que deu errado?</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
       </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+
+      <!-- Segundo bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Como foi resolvido?</h1>
+          <p>Para superar esse desafio, tive que reavaliar minha rotina e estabelecer uma estratégia mais eficaz de gestão do tempo. Passei a priorizar as tarefas de acordo com a sua urgência e importância, além de reservar horários específicos durante a semana para focar exclusivamente no projeto, sem deixar que as atividades da faculdade tomassem conta de todo o meu tempo.</p>
         </div>
-        <h3 class="fs-2 text-body-emphasis">Como foi resolvido?</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
       </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+
+      <!-- Terceiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Lições</h1>
+          <p>A principal lição que aprendi foi a importância de gerenciar meu tempo de maneira mais eficaz. Ao criar uma rotina mais estruturada e disciplinada, consegui maximizar minha produtividade e evitar o estresse causado pela sobrecarga de tarefas.</p>
         </div>
-        <h3 class="fs-2 text-body-emphasis">Quais lições extraidas?</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
       </div>
     </div>
-  </div>
 
+    <hr style="width: 90%; justify-self: center; border-top: 5px solid rgb(233, 0, 0); opacity: 100%;">
+
+    <h1 style="justify-content: center; display: flex; font-size: 50px; margin-top: 50px;" >Dayvid Cristiano<i class="bi bi-cpu-fill" style="margin-left: 20px;"></i></h1>
+    <div class="container py-4" style="display: flex; gap: 1rem; align-items: stretch;">
+
+      <!-- Primeiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">O que deu errado?</h1>
+          <p>O principal desafio que encontrei no projeto foi a falta de conhecimento e prática com o Arduino e com a linguagem de programação C, que eram fundamentais para a execução das tarefas. Isso causou atrasos no andamento do projeto, já que eu frequentemente me deparava com erros de código.</p>
+        </div>
+      </div>
+
+      <!-- Segundo bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Como foi resolvido?</h1>
+          <p>Para superar essas dificuldades, dediquei um tempo considerável ao estudo e à prática com o Arduino e a linguagem C. Comecei com tutoriais online, cursos e projetos básicos para aprender os conceitos fundamentais, como a configuração do hardware, a escrita de código eficiente e a depuração de erros. </p>
+        </div>
+      </div>
+
+      <!-- Terceiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Lições</h1>
+          <p>Essa experiência me ensinou várias lições valiosas. Primeiro, aprendi que a falta de conhecimento inicial não é um obstáculo insuperável, desde que você esteja disposto a investir tempo e esforço para aprender e se aprimorar. A prática constante foi crucial para consolidar o que aprendi e transformar o conhecimento teórico em habilidades práticas.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr style="width: 90%; justify-self: center; border-top: 5px solid rgb(233, 0, 0); opacity: 100%;">
+
+    <h1 style="justify-content: center; display: flex; font-size: 50px; margin-top: 50px;" >Jeniffer Cristine<i class="bi bi-box2-heart-fill" style="margin-left: 20px;"></i></h1>
+    <div class="container py-4" style="display: flex; gap: 1rem; align-items: stretch;">
+
+      <!-- Primeiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">O que deu errado?</h1>
+          <p>Um dos maiores desafios que enfrentei durante o desenvolvimento do projeto foi encontrar uma forma eficaz de criar o design adequado. Inicialmente, não tinha uma ideia clara de como estruturar visualmente o projeto de maneira funcional e atrativa. Eu me vi preso a dúvidas sobre a escolha de cores, layout e a maneira como os elementos deveriam ser organizados.</p>
+        </div>
+      </div>
+
+      <!-- Segundo bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Como foi resolvido?</h1>
+          <p>Para resolver esse problema, comecei a dedicar mais tempo ao estudo e à prática de design. Investi tempo em pesquisar referências de design em projetos similares e procurei entender melhor as necessidades do usuário e as tendências de design atuais. A prática constante e a busca por inspiração me ajudaram a desenvolver uma abordagem mais clara e confiante para o design do projeto.</p>
+        </div>
+      </div>
+
+      <!-- Terceiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Lições</h1>
+          <p>Essa experiência me ensinou várias lições valiosas sobre design. Primeiramente, aprendi que o design não é apenas uma questão estética, mas uma ferramenta estratégica para garantir a funcionalidade e a experiência do usuário. A pesquisa e o estudo de referências foram fundamentais para entender o que funciona melhor em termos de usabilidade e como isso se conecta à estética.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr style="width: 90%; justify-self: center; border-top: 5px solid rgb(233, 0, 0); opacity: 100%;">
+
+    <h1 style="justify-content: center; display: flex; font-size: 50px; margin-top: 50px;" >Leticia Gabriela<i class="bi bi-camera-reels" style="margin-left: 20px;"></i></h1>
+    <div class="container py-4" style="display: flex; gap: 1rem; align-items: stretch;">
+
+      <!-- Primeiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">O que deu errado?</h1>
+          <p>Um dos desafios que encontrei durante o desenvolvimento do projeto foi conseguir uma boa forma de gravar o vídeo de apresentação. Inicialmente, não tinha uma visão clara de como estruturar a gravação, o que deveria ser enfatizado e como apresentar o projeto de forma clara e envolvente.</p>
+        </div>
+      </div>
+
+      <!-- Segundo bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Como foi resolvido?</h1>
+          <p>Primeiro, criei um roteiro detalhado, no qual defini os pontos principais a serem abordados, a ordem das informações e as transições entre os tópicos. Isso me ajudou a manter o foco durante a gravação e a evitar repetições ou falhas de comunicação.</p>
+        </div>
+      </div>
+
+      <!-- Terceiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Lições</h1>
+          <p>Essa experiência me ensinou lições valiosas sobre a importância do planejamento e organização em todas as etapas de um projeto, especialmente quando se trata de comunicação visual e apresentação. Aprendi que um bom roteiro é essencial para garantir que a mensagem seja transmitida de forma clara e eficaz.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr style="width: 90%; justify-self: center; border-top: 5px solid rgb(233, 0, 0); opacity: 100%;">
+
+    <h1 style="justify-content: center; display: flex; font-size: 50px; margin-top: 50px;" >André Felipe<i class="bi bi-key" style="margin-left: 20px;"></i></h1>
+    <div class="container py-4" style="display: flex; gap: 1rem; align-items: stretch;">
+
+      <!-- Primeiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">O que deu errado?</h1>
+          <p>Com tantas responsabilidades acumuladas, foi difícil organizar o tempo de forma eficiente e garantir que todos os membros do grupo estivessem alinhados e trabalhando de forma produtiva. A sobrecarga de tarefas fez com que a comunicação e a coordenação dentro do grupo ficassem comprometidas em alguns momentos, o que gerou atrasos e dificuldades para cumprir os prazos estabelecidos.</p>
+        </div>
+      </div>
+
+      <!-- Segundo bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Como foi resolvido?</h1>
+          <p>Conversei com os membros do meu time para entender suas dificuldades e para alinhar as expectativas de todos. A boa comunicação foi fundamental nesse processo, já que todos foram muito atenciosos e dispostos a ajudar, o que criou um ambiente de trabalho mais cooperativo. Juntos, estabelecemos prioridades claras e distribuímos as tarefas de acordo com as capacidades e os horários de cada membro.</p>
+        </div>
+      </div>
+
+      <!-- Terceiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Lições</h1>
+          <p>Essa experiência me ensinou a importância de gerenciar um grupo de forma eficiente e colaborativa, especialmente em contextos onde há múltiplas demandas. Aprendi que, como líder, é essencial manter uma comunicação aberta e constante, garantindo que todos os membros do grupo se sintam ouvidos e que as responsabilidades sejam bem distribuídas.</p>
+        </div>
+      </div>
+    </div>
+
+    <hr style="width: 90%; justify-self: center; border-top: 5px solid rgb(233, 0, 0); opacity: 100%;">
+
+    <h1 style="justify-content: center; display: flex; font-size: 50px; margin-top: 50px;" >Alan Vitor<i class="bi bi-code" style="margin-left: 20px;"></i></h1>
+    <div class="container py-4" style="display: flex; gap: 1rem; align-items: stretch;">
+
+      <!-- Primeiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">O que deu errado?</h1>
+          <p>Não tinha experiência suficiente com as tecnologias necessárias, como HTML, CSS e JavaScript, o que resultou em um código que não estava funcionando como esperado. A estrutura visual da página não estava sendo renderizada corretamente, e a interação com os usuários estava com falhas.</p>
+        </div>
+      </div>
+
+      <!-- Segundo bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Como foi resolvido?</h1>
+          <p>Iniciei um estudo mais aprofundado sobre HTML, CSS e JavaScript, além de explorar ferramentas e frameworks como o Bootstrap, que facilitam a criação de layouts responsivos e esteticamente agradáveis. Assisti a tutoriais, li artigos especializados e pratiquei criando pequenos projetos e testando diferentes técnicas.</p>
+        </div>
+      </div>
+
+      <!-- Terceiro bloco -->
+      <div class="bord" style="max-width: 550px; flex: 1;">
+        <div class="container-fluid">
+          <h1 class="fw-bold">Lições</h1>
+          <p>Essa experiência me ensinou a importância de investir tempo em aprendizado contínuo, especialmente quando lidamos com novas tecnologias ou áreas em que não temos muita experiência.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

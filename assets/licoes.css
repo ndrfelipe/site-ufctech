@@ -6,9 +6,6 @@
     scroll-behavior: smooth;
 }
 
-p {
-    font-size: 0.9rem;
-}
 .cartao{
     background-color: white;
     display: flex;
@@ -94,4 +91,17 @@ p {
 
 .palavra-chave:hover{
     cursor: default;
+}
+
+.container-fluid.py-5 {
+    width: -100px;
+}
+
+.custom-card {
+    max-width: 600px; 
+    margin: 0 auto;   
+}
+
+.bord {
+    
 }
